@@ -1,0 +1,455 @@
+/* 
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    position: relative;
+    background-image: url('background.jpg');
+    background-size: cover;
+}
+h1{
+    color: rgb(255, 255, 255);
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%);
+}
+
+#mainbox{
+    width: 400px;
+    height: 100px;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    align-content: center;
+    display: flex;
+    text-align: center;
+    
+}
+#mainbox input{
+  margin-top:20px ;
+ width: 250px;
+ padding: 8px;
+ margin-right: 10px;
+}
+#mainbox button{
+    width: 90px;
+    padding: 9px ;
+    background-color: rgb(14, 55, 95);
+    color: white;
+    border: none;
+   
+}
+#container{
+    width: 610px;
+   height: 360px;
+    display: flex;
+ background-color:transparent;
+ z-index: 2;
+ flex-wrap: wrap;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+ margin-top: 340px;
+ 
+}
+
+#wApp{
+    width: 250px;
+    height: 300px;
+    z-index: 1;
+}
+#fbox{
+    width: 300px;
+    height: 360px;
+   background-image: url('city1.jpg');
+   background-size:cover ;
+   opacity: 0.80;
+   
+}
+
+.Box{
+
+    width: 300px;
+    height: 360px;
+    backdrop-filter: blur(5px);
+   background-color: aqua;
+    background-image: url('city.jpg');
+    background-size:cover ;
+    opacity: 1;
+    
+}
+
+h2{
+    color: white;
+    
+    margin-top: 15px;
+}
+#Text{
+    color: red;
+}
+span{
+    color: aqua;
+    background-color: yellow;
+    margin-left: 20px;
+}
+
+h3{
+    font-size: x-large;
+    text-align: center;
+}
+.lo-div{
+    background-color:transparent;
+    width: 150px;
+    height: 150px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+}
+#text{
+    color: rgb(207, 221, 8);
+   text-shadow: 2px 3px 5px rgb(255, 98, 0);
+}
+#text1{
+    color: red;
+    
+}
+#text3{
+    margin-top: 12px;
+    color:white;
+    text-shadow: 0px 0px 10px rgb(31, 52, 52);
+}
+#text2{
+    margin-top: 13px;
+    color:white;
+    text-shadow: 0px 0px 10px rgb(31, 52, 52);
+}
+#text4{
+    margin-top: 14px;
+    color:white;
+    text-shadow: 0px 0px 10px rgb(31, 52, 52);
+}
+#text7{
+    margin-top: 14px;
+    color:white;
+    text-shadow: 0px 0px 10px rgb(31, 52, 52);
+}
+#Text{
+    margin-top: 5px;
+}
+#info{
+    margin-left: 130px;
+   
+}
+#info1{
+    margin-left: 130px;
+}
+#text5{
+    color: aqua;
+    margin-left: 115px;
+}
+#text6{
+    margin-left: 45px;
+    margin-top: 18px;
+    color: white;
+}
+#text8{
+    margin-left: 35px;
+    margin-top: 18px;
+    color: white;
+} */
+
+
+
+
+
+
+
+
+
+/* Global reset for padding and margins */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #282c34;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    margin: 0;
+  }
+  
+  /* Main box for centering form input */
+  #mainbox {
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 80%;
+    max-width: 400px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #61dafb;
+    color: #282c34;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #21a1f1;
+  }
+  
+  /* Container for weather data */
+  #container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+   
+  }
+  
+  #fbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #555;
+  }
+  
+  h2, h3, p {
+    margin: 5px 0;
+  }
+  
+  /* Weather data display */
+  .Box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  #Text {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  #info {
+    font-size: 2em;
+    font-weight: bold;
+  }
+  
+  #info1 {
+    width: 60px;
+    height: 60px;
+  }
+  
+  #text5, #text6, #text8 {
+    margin: 5px 0px;
+  }
+  
+  /* Responsive Design */
+  
+  /* Mobile screens */
+  @media (max-width: 480px) {
+    #container {
+      padding: 10px;
+      width: 90%;
+    }
+  
+    #fbox, .Box {
+      display: block;
+      text-align: center;
+    }
+  
+    h2, h3, p {
+      font-size: 1em;
+    }
+  
+    #info {
+      font-size: 1.5em;
+    }
+  }
+  
+  /* Tablets and small desktops */
+  @media (min-width: 481px) and (max-width: 768px) {
+    #container {
+      padding: 20px;
+      width: 100%;
+    }
+  
+    #fbox, .Box {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+  
+    h2, h3, p {
+      font-size: 1.2em;
+    }
+  
+    #info {
+      font-size: 2em;
+    }
+  }
+
+  
+  /* App.css */
+
+/* Basic reset for padding and margins */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #282c34;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #mainbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 200px;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #61dafb;
+    color: #282c34;
+  }
+  
+  #container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  #fbox {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px;
+    background-color: #444;
+  }
+  
+  .Box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #333;
+    border-radius: 8px;
+  }
+  
+  #info, #Text, #info1, #text5, #text6, #text8 {
+    margin: 5px ;
+  }
+  
+  #info1 {
+    width: 50px;
+    height: 50px;
+  }
+  
+  p {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  
+  #Text {
+    font-size: 1.5rem;
+  }
+  
+  @media (max-width: 768px) {
+    /* Adjust layout for tablets */
+    h1 {
+      font-size: 1.8rem;
+    }
+    #fbox {
+      flex-direction: column;
+      align-items: center;
+      padding: 5px;
+    }
+    .Box {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Adjust layout for mobile devices */
+    h1 {
+      font-size: 1.6rem;
+    }
+    input[type="text"] {
+      width: 150px;
+      font-size: 14px;
+    }
+    button {
+      font-size: 14px;
+      padding: 8px 12px;
+    }
+    #info1 {
+      width: 40px;
+      height: 40px;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+  
